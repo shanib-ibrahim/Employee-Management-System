@@ -1,0 +1,37 @@
+[
+  { "id": 1, "name": "John Doe", "role": "Developer", "department": "IT" },
+  { "id": 2, "name": "Sara Smith", "role": "Designer", "department": "UI/UX" },
+  { "id": 3, "name": "Mike Johnson", "role": "Tester", "department": "QA" },
+  { "id": 4, "name": "Emily Davis", "role": "Manager", "department": "HR" },
+  { "id": 5, "name": "Chris Lee", "role": "Developer", "department": "IT" },
+  { "id": 6, "name": "Anna Brown", "role": "Designer", "department": "UI/UX" },
+  { "id": 7, "name": "David Wilson", "role": "Tester", "department": "QA" },
+  { "id": 8, "name": "Laura Martin", "role": "Manager", "department": "HR" },
+  { "id": 9, "name": "James Taylor", "role": "Developer", "department": "IT" },
+  {
+    "id": 10,
+    "name": "Linda White",
+    "role": "Designer",
+    "department": "UI/UX"
+  },
+  { "id": 11, "name": "Robert Harris", "role": "Tester", "department": "QA" },
+  { "id": 12, "name": "Patricia Clark", "role": "Manager", "department": "HR" },
+  { "id": 13, "name": "Daniel Lewis", "role": "Developer", "department": "IT" },
+  {
+    "id": 14,
+    "name": "Jessica Hall",
+    "role": "Designer",
+    "department": "UI/UX"
+  },
+  { "id": 15, "name": "Matthew Allen", "role": "Tester", "department": "QA" },
+  { "id": 16, "name": "Karen Young", "role": "Manager", "department": "HR" },
+  { "id": 17, "name": "Anthony King", "role": "Developer", "department": "IT" },
+  {
+    "id": 18,
+    "name": "Elizabeth Wright",
+    "role": "Designer",
+    "department": "UI/UX"
+  },
+  { "id": 19, "name": "Steven Scott", "role": "Tester", "department": "QA" },
+  { "id": 20, "name": "Susan Adams", "role": "Manager", "department": "HR" }
+]
