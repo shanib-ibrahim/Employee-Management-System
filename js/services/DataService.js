@@ -15,8 +15,8 @@ export default class DataService {
         new Employee({
           id: employee.id,
           name: `${employee.name}`,
-          role: employee.company?.title || "Staff",
-          department: employee.company?.department || "General",
+          role: employee?.role || "Staff",
+          department: employee?.department || "General",
         })
     );
     this.collection.setEmployees(employees);
