@@ -1,4 +1,4 @@
-export default class AddEmployeeComponent {
+export default class AddEmployee {
   constructor(onSave) {
     this.onSave = onSave;
     this.modal = null;

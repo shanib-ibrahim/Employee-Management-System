@@ -9,6 +9,7 @@ export default class DataService {
 
   async loadEmployees() {
     const data = await EmployeeAPI.fetchEmployees();
+    console.log("Fetched Employees:", data);
     const employees = data.map(
       (employee) =>
         new Employee({

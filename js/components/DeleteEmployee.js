@@ -1,4 +1,4 @@
-export default class DeleteEmployeeComponent {
+export default class DeleteEmployee {
   constructor(onDelete) {
     this.onDelete = onDelete;
     this.modal = null;

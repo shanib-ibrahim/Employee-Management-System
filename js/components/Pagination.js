@@ -1,4 +1,4 @@
-export default class PaginationComponent {
+export default class Pagination {
   constructor(limit = 10, containerId = "pagination") {
     this.limit = limit;
     this.page = 1;

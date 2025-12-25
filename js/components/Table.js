@@ -1,4 +1,4 @@
-export default class TableComponent {
+export default class Table {
   constructor(container) {
     this.container = container;
   }

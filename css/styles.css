@@ -9,12 +9,10 @@ body {
   color: #333;
 }
 
-/* Header */
 h2 {
   margin-bottom: 15px;
 }
 
-/* Controls */
 #controls {
   display: flex;
   gap: 10px;
@@ -179,6 +177,96 @@ label input {
 #pagination button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.custom-multiselect {
+  position: relative;
+  width: 180px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-trigger {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  max-height: 180px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+}
+
+.custom-multiselect.active .options {
+  display: block;
+}
+
+.options div {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.options div:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.filter-tags .tag {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-tags .tag span.remove {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#clearFilterBtn {
+  padding: 5px 12px;
+  font-size: 13px;
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#clearFilterBtn:hover {
+  background: #2563eb;
+  color: white;
 }
 
 @media (max-width: 768px) {
