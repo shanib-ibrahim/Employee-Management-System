@@ -180,3 +180,55 @@ label input {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px 15px;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ccc;
+    text-align: left;
+  }
+
+  tbody td:last-child {
+    border-bottom: 0;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+  }
+
+  tbody td button.deleteBtn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  #pagination {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}

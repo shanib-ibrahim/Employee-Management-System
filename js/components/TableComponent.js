@@ -6,22 +6,24 @@ export default class TableComponent {
   render(employees) {
     this.container.innerHTML = `
         <table>
+        <thead>
           <tr>
             <th>Name</th>
             <th>Role</th>
             <th>Dept</th>
             <th>Action</th>
           </tr>
+          </thead>
           ${
             employees && employees.length > 0
               ? employees
                   .map(
                     (e) => `
                     <tr>
-                      <td>${e.name}</td>
-                      <td>${e.role}</td>
-                      <td>${e.department}</td>
-                      <td>
+                      <td data-label="Name">${e.name}</td>
+                      <td data-label="Role">${e.role}</td>
+                      <td data-label="Department">${e.department}</td>
+                      <td data-label="Action">
                         <button data-id="${e.id}" class="deleteBtn">Delete</button>
                       </td>
                     </tr>
